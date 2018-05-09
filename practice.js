@@ -1,124 +1,127 @@
+
 /* 
-  Once you complete a problem, refresh ./SpecRunner.html in your browser and check to see if the problem's test(s) are passing.
-  Passed tests will be indicated by a green circle.
-  Failed tests will be indicated by a red X.
-
-  You can refresh the page at any time to re-run all the tests.
+ Once you complete a problem, refresh ./SpecRunner.html in your browser and check to see if the problem's test(s) are passing.
+ Passed tests will be indicated by a green circle.
+ Failed tests will be indicated by a red X.
+ You can refresh the page at any time to re-run all the tests.
 */
-
 ////////// PROBLEM 1 //////////
-
 // Do not edit the code below.
-var arr = [10,20,30];
+var arr = [10, 20, 30];
 // Do not edit the code above.
-
 /*
-  Create a function named 'first' that is given 'arr' as an argument.
-  Return the first item in the given array.
+ Create a function named 'first' that is given 'arr' as an argument.
+ Return the first item in the given array.
 */
-
 //Code Here
-
-
-
+function first(arr) {
+  return arr[0];
+}
 ////////// PROBLEM 2 //////////
-
 // Do not edit the code below.
-var arr = [40,50,60];
+var arr = [40, 50, 60];
 // Do not edit the code above.
-
 /*
-  Create a function named 'last' that is given 'arr' as an argument. 
-  Return the last item in the given array.
+ Create a function named 'last' that is given 'arr' as an argument. 
+ Return the last item in the given array.
 */
-
 //Code Here
-
-
-
+function last(arr) {
+  return arr.pop();
+}
 ////////// PROBLEM 3 //////////
-
 // Do not edit the code below.
 var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 // Do not edit the code above.
-
 /*
-  Create a function named 'looper' that is given family as it's only argument. 
-  Loop through the given array and alert every item in the array.
+ Create a function named 'looper' that is given family as it's only argument. 
+ Loop through the given array and alert every item in the array.
 */
-
 //Code Here
-
-
-
+function looper(family) {
+  for (i = 0; i < family.length; i++) {
+    alert(family[i]);
+  }
+}
 ////////// PROBLEM 4 //////////
-
 // Do not edit the code below.
 var letters = ['A', 'B', 'C', 'D', 'E'];
 // Do not edit the code above.
-
 /*
-  Write a function called reversedLooper that is given letters as it's only argument. 
-  Loop through the given array backwards alerting every item in the array starting at the end.\
+ Write a function called reversedLooper that is given letters as it's only argument. 
+ Loop through the given array backwards alerting every item in the array starting at the end.\
 */
-
 //Code Here
-
-
-
+function reversedLooper(letters) {
+  for (i = letters.length; i > 0; i--) {
+    alert(i);
+  }
+}
 ////////// PROBLEM 5 //////////
-
 // Do not edit the code below.
-var nums = [1,2,3,6,22,98,45,23,22,12];
+var nums = [1, 2, 3, 6, 22, 98, 45, 23, 22, 12];
 // Do not edit the code above.
-
 /*
-  Write a function named evenFinder that is given nums as it's only argument.
-  Return an array that contains the even numbers from the nums array.
+ Write a function named evenFinder that is given nums as it's only argument.
+ Return an array that contains the even numbers from the nums array.
 */
-
 //Code Here
-
-
-
+evenNums = [];
+function evenFinder(nums) {
+  for (i = 0; i < nums.length; i++) {
+    if (nums[i] % 2 === 0) {
+      evenNums.push(nums[i]);
+    }
+  }
+  return evenNums;
+}
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
-
 ////////// PROBLEM 6 //////////
-
 // Do not edit the code below.
-var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
+var numbersArray = [1, 2, 34, 54, 55, 34, 32, 11, 19, 17, 54, 66, 13];
 // Do not edit the code above.
-
 /*
-  Write a function called divider that is given one argument, numbersArray.
-  Have divider return an Array with the first item in the array being the evens array (all the even values from numbersArray) and the second item in the Array being the odds array (all the odd values from numbersArray).
+ Write a function called divider that is given one argument, numbersArray.
+ Have divider return an Array with the first item in the array being the evens array (all the even values from numbersArray) and the second item in the Array being the odds array (all the odd values from numbersArray).
 */
-
-//Code Here
-
-
-
+function divider(numbersArray) {
+  var evennums = [];
+  var oddnums = [];
+  for (i = 0; i < numbersArray.length; i++) {
+    if (numbersArray[i] % 2 === 0) {
+      evennums.push(numbersArray[i]);
+    } else if (numbersArray[i] % 2 !== 0) {
+      oddnums.push(numbersArray[i]);
+    }
+  }
+  return totalArray = [evennums, oddnums];
+}
 ////////// PROBLEM 7 //////////
-
 // Do not edit the code below.
-var getRandomArbitrary = function() {
+var getRandomArbitrary = function () {
   return Math.floor(Math.random() * 30);
 };
 // Do not edit the code above.
-
 /* 
-  var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
-  Above you're given a function that will return a random number between 0 and 30. There is also a commented out array full of numbers to help you visualize what your function will be receiving.
-  Write a function named finder that will take in an array as an argument.
-  It will then  get a random number (by invoking getRandomArbitrary).
-  Loop through the array to see if that random number is in the array. 
-  If it is, return true, if it's not, return false
+ var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+ Above you're given a function that will return a random number between 0 and 30. There is also a commented out array full of numbers to help you visualize what your function will be receiving.
+ Write a function named finder that will take in an array as an argument.
+ It will then get a random number (by invoking getRandomArbitrary).
+ Loop through the array to see if that random number is in the array. 
+ If it is, return true, if it's not, return false
 */
-
 //Code Here
+function finder(array) {
+  getRandomArbitrary();
+  for (i = 0; i < array.length; i++) {
+  }
+  if (i == getRandomArbitrary(i)) {
+    return true;
+  } else {
+    return false;
+  }
 
-
-
+}
 ////////// PROBLEM 8 //////////
 
 // Do not edit the code below.
@@ -145,6 +148,31 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+function removeItem(myGroceryList, item) {
+  if (myGroceryList && item) {
+
+    for (i = 0; i < myGroceryList.length; i++) {
+      if (myGroceryList[i] === item) {
+        myGroceryList.splice(i, 1)
+      }
+    }
+    return myGroceryList
+  }
+  else {
+    return []
+  }
+}
+
+
+function addItem(myGroceryList, item) {
+  if (myGroceryList && item) {
+    myGroceryList.push(item)
+    return myGroceryList
+  }
+  else {
+    return []
+  }
+}
 
 
 
@@ -155,7 +183,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-
+function maker() {
+  let arr = []
+  for (i = 1; i <= 215; i++) {
+    arr.push(i)
+  }
+  return arr
+}
 
 
 ////////// PROBLEM 10 //////////
@@ -169,9 +203,15 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
   Return a new array after adding ten to each item in numbers. 
   *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 */
-  
-//Code Here
 
+//Code Here
+function addTen(numbers) {
+  let arr = []
+  for (i = 0; i < numbers.length; i++) {
+    arr.push(Number(numbers[i]) + 10)
+  }
+  return arr
+}
 
 
 ////////// PROBLEM 11 //////////
@@ -181,10 +221,10 @@ var num1 = Math.floor(Math.random() * 30);
 var num2 = Math.floor(Math.random() * 30);
 var arr1 = [];
 var arr2 = [];
-for(var i = 0; i < num1; i++){
+for (var i = 0; i < num1; i++) {
   arr1.push(i);
 }
-for(var i = 0; i < num2; i++){
+for (var i = 0; i < num2; i++) {
   arr2.push(i);
 }
 // Do not edit the code above.
@@ -196,7 +236,14 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function longer(arr1, arr2) {
+  if (arr1.length > arr2.length) {
+    return arr1
+  }
+  else {
+    return arr2
+  }
+}
 
 
 /*
@@ -208,7 +255,17 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function both(arr1, arr2) {
+  let arr = []
+  for (let j = 0; j < arr2.length; j++) {
+    for (let i = 0; i < arr1.length; i++) {
+      if (arr1[i] === arr2[j]) {
+        arr.push(arr1[i])
+      }
+    }
+  }
+  return arr
+}
 
 
 ////////// PROBLEM 12 //////////
@@ -217,27 +274,27 @@ for(var i = 0; i < num2; i++){
 var devMountainEmployees = [];
 
 var tyler = {
-    name: 'Tyler',
-    position: 'Lead Instructor/Engineer',
-    spiritAnimal: 'Honey Badger'
+  name: 'Tyler',
+  position: 'Lead Instructor/Engineer',
+  spiritAnimal: 'Honey Badger'
 };
 
 var cahlan = {
-    name: 'Cahlan',
-    position: 'CEO',
-    spiritAnimal: 'butterfly'
+  name: 'Cahlan',
+  position: 'CEO',
+  spiritAnimal: 'butterfly'
 };
 
 var ryan = {
-    name: 'Ryan',
-    position: 'Marketing',
-    spiritAnimal: 'fox'
+  name: 'Ryan',
+  position: 'Marketing',
+  spiritAnimal: 'fox'
 };
 
 var colt = {
-    name: 'Colt',
-    position: 'Everything really',
-    spiritAnimal: 'Young Male Horse'
+  name: 'Colt',
+  position: 'Everything really',
+  spiritAnimal: 'Young Male Horse'
 };
 // Do not edit the code above.
 
@@ -248,7 +305,8 @@ var colt = {
 */
 
 //Code Here
-
+devMountainEmployees = [tyler, cahlan, ryan, colt]
+console.log(devMountainEmployees.length);
 
 
 /*
@@ -257,7 +315,11 @@ var colt = {
 */
 
 //Code Here
-
+for (let i = 0; i < devMountainEmployees.length; i++) {
+  if (devMountainEmployees[i] === cahlan) {
+    devMountainEmployees.splice(i, 1)
+  }
+}
 
 
 ////////// PROBLEM 13 //////////
@@ -269,7 +331,7 @@ var colt = {
 */
 
 //Code Here
-
+users = []
 
 
 /*
@@ -280,15 +342,28 @@ var colt = {
 
 // Do not edit the code below.
 var user1 = {
-    name: 'Tyler McGinnis',
-    email: 'tylermcginnis33@gmail.com',
-    password: 'iLoveJavaScript',
-    username: 'infiniteLoop'
+  name: 'Tyler McGinnis',
+  email: 'tylermcginnis33@gmail.com',
+  password: 'iLoveJavaScript',
+  username: 'infiniteLoop'
 };
 // Do not edit the code above.
 
 //Code Here
+var user2 = {
+  name: 'Todd Gore',
+  email: 'tg@gmail.com',
+  password: 'password',
+  username: 'ToddGore'
+};
+var user3 = {
+  name: 'James Harden',
+  email: 'j.hardin@houston.com',
+  password: 'baller',
+  username: 'TheBeard'
+};
 
+users = [user1, user2, user3]
 
 
 /*
@@ -302,7 +377,13 @@ var user1 = {
 */
 
 //Code Here
-
+for (let i = 0; i < users.length; i++) {
+  for (let j = 0; j < Object.keys(users[i]).length; j++) {
+    if (users[j].email === 'tylermcginnis33@gmail.com') {
+      users.splice(i, 1)
+    }
+  }
+}
 
 
 /*
